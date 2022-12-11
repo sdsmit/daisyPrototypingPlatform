@@ -16,6 +16,10 @@ Use the EAGLE files to generate a gerber file which can be manufactured by PCB s
 - LED(2)
 - 1590BB stompbox enclosure  
 
+The items should fit in this orientation. See images for extra views of the enclosure. 
+
+![Alt text](images/front.jpg?raw=true "Title")
+
 # SOFTWARE
 
 If you choose to use oopsy daisy (gen~ to daisy compilation tool). Download and install the oopsy package (https://github.com/electro-smith/oopsy). Place `daisyPrototypingPlatformExample.maxpat` in `/Max 8/packages/oopsy/examples` and place `daisy.PetalLED.json` in `Max 8/packages/oopsy/source`.
