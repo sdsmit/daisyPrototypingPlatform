@@ -10,22 +10,22 @@ Use the EAGLE files to generate a gerber file which can be manufactured by PCB s
 - on/off momentary switches(2) - https://smallbear-electronics.mybigcommerce.com/momentary-spst-no-soft-touch/  
 - Daisy Seed - https://www.electro-smith.com/daisy/daisy
 - 10k potentiometers (6)  
-- TS 1/4 inch jacks (2) 
+- TS 1/4 inch jacks (2)
 - DC barrel negative power jack  
 - 1n5817 Diode   
 - LED(2)
 - 1590BB stompbox enclosure  
 
-The items should fit in this orientation. See images for extra views of the enclosure. 
+The items should fit in this orientation. See images for extra views of the enclosure.
 
 ![Alt text](images/front.jpg?raw=true "Title")
 
 # SOFTWARE
 
-If you choose to use oopsy daisy (gen~ to daisy compilation tool). Download and install the oopsy package (https://github.com/electro-smith/oopsy). Place `daisyPrototypingPlatformExample.maxpat` in `/Max 8/packages/oopsy/examples` and place `daisy.PetalLED.json` in `Max 8/packages/oopsy/source`.
+If you choose to use oopsy daisy (gen~ to daisy compilation tool). Download and install the oopsy package (https://github.com/electro-smith/oopsy). Place `daisyPrototypingPlatformExample.maxpat` in `/Max 8/packages/oopsy/examples` and place `daisy.prototypingPlatform.json` in `Max 8/packages/oopsy/source`.
 
 1. Open `daisyPrototypingPlatformExample.maxpat` and make modifications to the enclosed gen~ patcher.  
-2. Inside the max patch, select browse on the oopsy object and select `daisy.PetalLED.json`.  
+2. Inside the max patch, select browse on the oopsy object and select `daisy.prototypingPlatform.json`.  
 3. Put your daisy into DFU and hit save. This will flash the daisy with your patch and the corresponding controls should be active.  
 
-It should also be possible to use daisySP with this platform. It has only been tested with oopsy and gen~. 
+It should also be possible to use daisySP with this platform. It has only been tested with oopsy and gen~.

@@ -41,12 +41,12 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-15",
-					"linecount" : 7,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 411.0, 341.0, 150.0, 100.0 ],
-					"text" : "instead of \"petal\" use the browse button to find daisy.petalLED.json\n\nthis is in the /daisyPrototypingPlatform repo"
+					"patching_rect" : [ 411.0, 341.0, 150.0, 114.0 ],
+					"text" : "instead of \"petal\" use the browse button to find daisy.prototypingPlatform.json\n\nthis is in the /daisyPrototypingPlatform repo"
 				}
 
 			}
@@ -328,13 +328,49 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-10",
-									"linecount" : 6,
+									"id" : "obj-20",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 381.5, 316.0, 69.0, 22.0 ],
+									"text" : "expr 1 - in1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-19",
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 557.0, 182.0, 150.0, 87.0 ],
-									"text" : "depending on the orientation of your pcb, the knobs may actually appear in left to right top to bottom order: kn3,kn2,kn1,kn6,kn5,kn4"
+									"patching_rect" : [ 396.473856209150313, 234.0, 150.0, 47.0 ],
+									"text" : "make sure to use oopsy.ctrl.smooth2 for params. "
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 381.5, 285.0, 108.0, 22.0 ],
+									"text" : "oopsy.ctrl.smooth2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"linecount" : 13,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 557.0, 182.0, 150.0, 181.0 ],
+									"text" : "depending on the orientation of your pcb, the knobs may actually appear in left to right top to bottom order: kn3,kn2,kn1,kn6,kn5,kn4\n\nThe range may also be 1.0f-0.0f left-right for the pots. This can be fixed by routing the param after smoothing through [expr 1 - in1] "
 								}
 
 							}
@@ -541,6 +577,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"source" : [ "obj-13", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
