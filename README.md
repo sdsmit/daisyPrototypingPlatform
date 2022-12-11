@@ -16,9 +16,11 @@ Use the EAGLE files to generate a gerber file which can be manufactured by PCB s
 - LED(2)
 - 1590BB stompbox enclosure  
 
-The items should fit in this orientation. See images for extra views of the enclosure.
+The items should fit in this orientation.
 
 ![Alt text](images/front.jpg?raw=true "Title")
+![Alt text](images/back.jpg?raw=true "Title")
+
 
 # SOFTWARE
 
