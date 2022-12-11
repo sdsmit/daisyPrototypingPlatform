@@ -1,0 +1,50 @@
+{
+	"name":"colortone_digital_15_v1",
+	"defines": {
+		"OOPSY_TARGET_HAS_MIDI_INPUT": 1
+	},
+	"components": {
+		"sw1": {
+			"component": "Switch",
+			"pin": 25
+		},
+		"sw2": {
+			"component": "Switch",
+			"pin": 26
+    },
+		"kn1": {
+			"component": "AnalogControl",
+			"pin": 16
+		},
+		"kn2": {
+			"component": "AnalogControl",
+			"pin": 17
+		},
+		"kn3": {
+			"component": "AnalogControl",
+			"pin": 18
+		},
+		"kn4": {
+			"component": "AnalogControl",
+			"pin": 19
+		},
+		"kn5": {
+			"component": "AnalogControl",
+			"pin": 20
+		},
+		"kn6": {
+			"component": "AnalogControl",
+			"pin": 21
+		},
+		"led1": {
+			"component": "Led",
+			"pin": 22
+		},
+		"led2": {
+			"component": "Led",
+			"pin": 23
+		}
+	},
+	"aliases": {
+	}
+}
